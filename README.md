@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎯 Método Zero Risco — Landing Page
 
-## Getting Started
+Landing page de vendas de alta conversão para o produto digital **Método Zero Risco** da **Comunidade RFP Sports**.
 
-First, run the development server:
+## 📌 Sobre o Projeto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Esta landing page apresenta o Método Zero Risco, uma metodologia que explora vantagens matemáticas em casas de apostas por meio de:
+
+- **Promoções** — cashback, odds aumentadas, apostas protegidas
+- **Missões** — bônus diários e semanais
+- **Freebets** — apostas grátis convertidas em dinheiro real (60–80% de eficiência)
+- **Duplo Green** — arbitragem entre duas casas de apostas
+
+A comunidade possui parceria exclusiva com a **BETBRA**, reduzindo a comissão de 4,5% para **2,8%** para membros.
+
+## 🛠️ Stack Tecnológica
+
+| Tecnologia | Versão | Motivo |
+|---|---|---|
+| Next.js | 15+ | SSR, App Router, SEO nativo |
+| React | 19 | UI reativa e moderna |
+| TypeScript | 5+ | Tipagem estática, menos bugs |
+| Tailwind CSS | 4 | Estilização utilitária rápida |
+| Vercel | — | Deploy automático via CI/CD |
+
+## 📁 Estrutura de Pastas
+
+```
+src/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+├── components/
+│   ├── ui/
+│   │   ├── Button.tsx
+│   │   ├── Card.tsx
+│   │   └── Container.tsx
+│   └── sections/
+│       ├── Hero.tsx
+│       ├── Problems.tsx
+│       ├── Solution.tsx
+│       ├── HowItWorks.tsx
+│       ├── Testimonials.tsx
+│       ├── Pricing.tsx
+│       ├── FAQ.tsx
+│       └── LeadForm.tsx
+├── lib/
+│   └── utils.ts
+└── types/
+    └── index.ts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Como Rodar Localmente
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Acesse: [http://localhost:3000](http://localhost:3000)
 
-## Learn More
+## 🌐 Deploy
 
-To learn more about Next.js, take a look at the following resources:
+Projeto hospedado na **Vercel** com deploy automático a cada push na branch `main`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📊 Funcionalidades
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [x] Hero section com CTA principal
+- [x] Seção de problemas e solução
+- [x] Como funciona (passo a passo)
+- [x] Depoimentos de membros
+- [x] Tabela de preços
+- [x] FAQ com accordion
+- [x] Formulário de captura de leads
+- [x] SEO completo (Open Graph, Schema.org)
+- [x] Responsivo (mobile-first)
 
-## Deploy on Vercel
+## 📝 Workflow de Desenvolvimento
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Branch principal: `main` (protegida)
+- Feature branches: `feat/nome-da-feature`
+- Commits semânticos: `feat:`, `fix:`, `chore:`, `docs:`
+- Pull Requests obrigatórios para merge na `main`
