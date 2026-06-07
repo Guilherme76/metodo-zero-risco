@@ -1,0 +1,14 @@
+export { Header } from "./header";
+export { Hero } from "./hero";
+export { JoinTicker } from "./join-ticker";
+export { SocialProof } from "./social-proof";
+export { TestimonialsCarousel } from "./testimonials-carousel";
+export { Resultados } from "./resultados";
+export { Benefits } from "./benefits";
+export { Plans } from "./plans";
+export { PlansComparison } from "./plans-comparison";
+export { Faq } from "./faq";
+export { CtaFinal } from "./cta-final";
+export { Footer } from "./footer";
+export { PageViewTracker } from "./page-view-tracker";
+export { CountdownBanner } from "./countdown-banner";
